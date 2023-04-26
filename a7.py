@@ -1,5 +1,5 @@
 from neural import * 
-
+#first 3 questions 
 print("\n\nTraining SQ\n\n")
 sq_training_data = [
     ([0.2], [0.04]),
@@ -35,7 +35,7 @@ xorn.train(x_or_trainingdata)
 print()
 
 print(xorn.test_with_expected(x_or_trainingdata))
-
+# last 3 questions 
 print("\n\nTraining voter opinion\n\n")
 
 voter_opinion_data = [
@@ -52,7 +52,7 @@ von = NeuralNet(5, 6, 1)
 von.train(voter_opinion_data)
 
 print(von.test_with_expected(voter_opinion_data))
-
+#case data
 test_data=[
     ([1,1,1,.1,.1]),
     ([.5,.2,.1,.7,.7]),
@@ -60,8 +60,7 @@ test_data=[
     ([.8,.3,.3,.8,.3]),
     ([.9,.8,.8,.3,.6]),
 ]
-
-
+#cases Dem or rep
 print(f"case 1: {test_data[0]} evaluates to: {von.evaluate(test_data[0])}")
 print(f"case 2: {test_data[1]} evaluates to: {von.evaluate(test_data[1])}")
 print(f"case 3: {test_data[2]} evaluates to: {von.evaluate(test_data[2])}")
